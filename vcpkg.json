@@ -1,0 +1,6 @@
+{
+    "name": "infralite-mockserver",
+    "dependencies": [
+        "openssl"
+    ]
+}

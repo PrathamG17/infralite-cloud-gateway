@@ -1,0 +1,1 @@
+console.log("InfraLite static JS loaded!");

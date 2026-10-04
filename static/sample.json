@@ -1,0 +1,7 @@
+{
+ "students": [
+   { "firstname": "john", "lastname": "doe" },
+   { "firstname": "jane", "lastname": "smith" },
+   { "firstname": "jenna", "lastname": "blythe" }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+    "routes": [
+        {
+            "method": "GET",
+            "path": "/hello",
+            "responseType": "json",
+            "responseBody": "{ \"message\": \"Hello World\" }"
+        },
+        {
+            "method": "GET",
+            "path": "/page",
+            "responseType": "html",
+            "responseBody": "<html><body>\n<h1>Welcome!</h1>\n<form action='/submit' method='POST'>\n<input type='text' name='data' placeholder='Enter something'>\n<button type='submit'>Send</button>\n</form>\n</body></html>"
+        },
+        {
+            "method": "GET",
+            "path": "/data",
+            "responseType": "xml",
+            "responseBody": "<data><value>42</value></data>"
+        },
+        {
+            "method": "GET",
+            "path": "/simulate/error500",
+            "responseType": "plain",
+            "responseBody": "Simulated Internal Server Error",
+            "status": 500,
+            "statusText": "Internal Server Error"
+        },
+        {
+            "method": "GET",
+            "path": "/simulate/error404",
+            "responseType": "plain",
+            "responseBody": "Simulated Not Found",
+            "status": 404,
+            "statusText": "Not Found"
+        },
+        {
+            "method": "GET",
+            "path": "/simulate/delay",
+            "responseType": "plain",
+            "responseBody": "This response is delayed by 2 seconds",
+            "status": 200,
+            "statusText": "OK",
+            "delayMs": 2000
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+.git
+.vs
+out
+data
+logs
+certs
+build
+cmake-build-*
+*.db
+*.log
